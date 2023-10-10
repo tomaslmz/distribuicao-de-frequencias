@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style/index.css">
+    <header>
+        <h1>Distribuição de frequências</h1>
+    </header>
+    <main>
+        <section class="rol">
+            <input type="text" name="rol" id="rol" class="rol_input">
+            <button onclick="getNumbers()" class="button">Ok</button>
+            <button onmouseenter="showMessage()" onmouseleave="showMessage()" class="info">?</button>
+            <!-- <div class="message invisible" id="message">Digite os números separados por espaço</div> -->
+            <br>
+        </section>
+        <section class="error">
+            <p id="error_message"></p>
+            <p id="message" style="display: none;">Digite os números separados por espaço</p>
+        </section>
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Massa (kg)</th>
+                        <th>fi</th>
+                        <th>Fi</th>
+                        <th>fr</th>
+                        <th>Fri</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <section class="rol_section" style="display: none;">
+            <p id="rol_text"></p>
+        </section>
+    </main>
+    <script src="./src/script.js"></script>
+</body>
+</html>
